@@ -1,5 +1,7 @@
 # Lab2
 
+Published site: https://em-nam.github.io/Lab2/
+
 Practice with HTML by creating fake meeting minutes.
 Traditionally, a meeting note includes:
 
