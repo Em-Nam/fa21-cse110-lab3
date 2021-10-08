@@ -1,3 +1,6 @@
+* {
+    color: black;
+}
 
 /*style headers, see internal CSS for h1 styling in <head>*/
 h2 {
@@ -15,10 +18,6 @@ p {
     padding: 0ex 2ex 2ex 2ex;
 }
 
-nav {
-    border: 2px solid pink;
-}
-
 ul {
     border: 2px solid purple;
 }
@@ -30,19 +29,31 @@ ol {
 }
 
 li {
-    color: green;
     background-color: #e0c0cb;
 }
+
+/*use combinators*/
+ol ul {
+    border: 0px;    /*gets rid of borders within list*/
+}
+
+nav > ul {
+    border-width: 5px;    
+    /*thickens border around navigation */
+}
+
+h6 ~ p {
+    color: green;
+}
+
+h6 + p {
+    text-decoration: line-through;
+}
+
 
 /*style links*/
 a:link {
   color:#000;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: blueviolet;
   background-color: transparent;
   text-decoration: none;
 }
@@ -53,9 +64,18 @@ a:hover {
   text-decoration: underline;
 }
 
+/*inconsistend selector for link to use combinator as req in Lab3*/
+:visited {
+  color: blueviolet;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
 
 /*style elements by class*/
-[class~=section-title] {
+/*use attribute selector for when there is exact value match*/
+h3[class=section-title] {
     border-width: 2Q;
     border-color: black;
     border-style: dotted;
@@ -98,7 +118,7 @@ a:hover {
 }
 
 .agenda-item {
-    background-color: red;
+    background-color: white;
 }
 
 /*style grid*/
@@ -242,9 +262,6 @@ a:hover {
     max-width: 300px;
 }
 
-
-
-
 /*style specific elements by id*/
 #main-title {
     position: -webkit-sticky;
@@ -261,7 +278,6 @@ a:hover {
 
 #brainstorm-list {
     list-style-type: none; /* Remove bullets */
-    border-width: 0;
     padding: 0;
     padding: 0pt 0pt 3pt 10pt;
 }
@@ -272,12 +288,24 @@ a:hover {
 
 #survey_title {
     color: hsl(0, 100%, 50%);
-    /* color: red; */
+    text-decoration: underline;
 }
 
 #survey {
     background-color: white;
-    /*Add padding or border to this section*/
+    margin: 1cm 0.5cm 1cm 0.5cm;
+    padding-top: 2mm;
+    padding-bottom: 5mm;
+    padding-left: 2mm;
+    padding-right: 2mm;
+}
+
+#grade-choice {
+    display: block;
+}
+
+#state-choice-box {
+    display: block;
 }
 
 /*style media query responsiveness*/

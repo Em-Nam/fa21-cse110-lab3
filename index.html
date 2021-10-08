@@ -36,11 +36,11 @@
         <main>
             <section id="agenda">
                 <h3 class="section-title">Agenda</h3>
-                <ol>
+                <ol type="agenda">
                     <li class="agenda-item">Unfinished business from brainstorm meeting on Sept. 30, 2021
-                        <ul>
-                            <li>Introductions, share contact information</li>
-                            <li>Assign member roles</li>
+                        <ul class="agenda-item">
+                            <li class="agenda-item">Introductions, share contact information</li>
+                            <li class="agenda-item">Assign member roles</li>
                         </ul>
                     </li>
                     <li class="agenda-item">Brainstorm important features for a to-do list</li>
@@ -70,11 +70,11 @@
                         <p>Listed the main features and categorized if features were important for minimal viable product.</p>
                             <ul id="brainstorm-list">
                                 <li class="feature-item"><i>Input new task:</i> user can fill in template or form with important information of their task, generates a task that lists data and has not been completed yet</li>
-                                <li class="feature-item"></li><i>Check off completed task:</i> check box that can be clicked and crosses off or deletes task from list</li>
-                                <li class="feature-item"></li><i>View list of all tasks:</i> list of all the tasks needed to be completed (organize chronologically or by priority)</li>
-                                <li class="feature-item"></li><i>View details of specific task: </i> clicking on a task will pull up more detailed information that may not fit on the master list of all the tasks</li>
+                                <li class="feature-item"><i>Check off completed task:</i> check box that can be clicked and crosses off or deletes task from list</li>
+                                <li class="feature-item"><i>View list of all tasks:</i> list of all the tasks needed to be completed (organize chronologically or by priority)</li>
+                                <li class="feature-item"><i>View details of specific task: </i> clicking on a task will pull up more detailed information that may not fit on the master list of all the tasks</li>
                                 <br>
-                                <li class="feature-item"></li><p><i>Additional features</i>: being able to sort and filter tasks based on completed or not, ability to tag or group tasks and filter by tag, ability to set reminders and deadlines, celebratory visual when a task is completed, sharing completed achievements on social media, set priority to tasks</p></li>
+                                <li class="feature-item"><i>Additional features</i>: being able to sort and filter tasks based on completed or not, ability to tag or group tasks and filter by tag, ability to set reminders and deadlines, celebratory visual when a task is completed, sharing completed achievements on social media, set priority to tasks</li>
                             </ul>                        
                     </li>
 
@@ -111,6 +111,10 @@
                         <p class="minute-title"><b>Items to Edit:</b></p>
                         <!--Add extra html elements to style here-->
                         <p style="text-align: center; background-color: cadetblue; color: white; border-width: 1px; border-style: solid; border-color: black;">This is a line that is styled inline.</p>
+                        <h6 style="text-align: center;">Here is a small heading</h6>
+                        <p style="display: inline;"> Here is a short paragraph</p>
+                        <p style="display:inline;">Here is another short paragraph</p>
+                        <p style="display:inline;">Here is a third short paragraph</p>
                         <h3 class="flexbox-header">Title of flexbox: examples of to-do lists</h3>
                         <div class="flexbox"> <!--This div would be used to style images-->
                             
@@ -206,7 +210,7 @@
                 <br>
 
                 <label>What is the best west coast state?</label>
-                <input list="state-choice">
+                <input id="state-choice-box" list="state-choice">
                 <datalist id="state-choice">
                     <option value="AZ">Arizona
                     <option value="CA">California
