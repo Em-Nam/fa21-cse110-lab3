@@ -4,6 +4,12 @@
         <meta charset="utf-8">
         <title>Sample Meeting Minutes Template</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            h1 {
+                color: black;
+                margin-bottom: 40px;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -36,6 +42,7 @@
                     <li>Sketch to-do list interfaces</li>
                     <li>Next steps/Deliverables for next meeting</li>
                     <li>Lots of detailed information</li>
+                    <li>Add items to edit</li>
                     <li>Questions, follow-up concerns</li>
                 </ol>
             </section>
@@ -90,6 +97,12 @@
                     </li>
 
                     <li>
+                        <p><b>Items to Edit:</b></p>
+                        <!--Add extra html elements to style here-->
+                        <p style="text-align: center; background-color: cadetblue; color: white;">This is a line that is styled inline.</p>
+                    </li>
+
+                    <li>
                         <p><b>Comments/Questions:</b></p>
                         <ul>
                             <li>How are we making sure code doesn't get trampled? We will set up share code repo on <a href="https://github.com/Em-Nam/Lab2"> my GitHub</a>.</li>
@@ -125,7 +138,7 @@
         <hr>
 
         <section id="survey">
-            <h3>Survey Form:</h3>
+            <h3 id="survey_title">Survey Form:</h3>
             <form>
                 <label>Enter your name</label>
                 <input type="text">

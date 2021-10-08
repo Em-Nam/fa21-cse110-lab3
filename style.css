@@ -1,3 +1,25 @@
-h1 {
-    color: gray;
+
+/*style headers*/
+h2 {
+    /*make heading colors decrease in darkness*/
+    color: rgb(55, 55, 55);
+
+}
+
+h3 {
+    /*make heading colors decrease in darkness*/
+    color: #707070;
+}
+
+
+
+/*style specific elements by id*/
+#survey_title {
+    color: hsl(0, 100%, 50%);
+    /* color: red; */
+}
+
+#survey {
+    background-color: #e0c0cb;
+    /*Add padding or border to this section*/
 }
