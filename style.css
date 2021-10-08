@@ -24,7 +24,7 @@ ul {
 
 ol {
     border: 2px solid blue;
-    width: 80vw;
+    width: auto;
     height: auto;
 }
 
@@ -38,7 +38,8 @@ ol ul {
 }
 
 nav > ul {
-    border-width: 5px;    /*thickens border around navigation */
+    border-width: 5px;    
+    /*thickens border around navigation */
 }
 
 h6 ~ p {
@@ -153,7 +154,7 @@ h3[class=section-title] {
     grid-row-start: 1;
     grid-row-end: 2;
 
-    max-width: 100%;
+    /* max-width: 90%; */
 
 }
 
@@ -171,14 +172,6 @@ h3[class=section-title] {
 
 }
 
-/* .img1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-*/
-
 .text3 {
     grid-column-start: 3;
     grid-column-end: -1;
@@ -187,8 +180,6 @@ h3[class=section-title] {
 }
 
 .text1, .text2, .text3 {
-    /* width: 25vw;
-    height: auto; */
 
     border-color: #000;
     border-width: 2px;
