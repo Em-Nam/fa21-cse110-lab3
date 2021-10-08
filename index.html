@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="style.css">
         <style>
             h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: xx-large;
                 color: black;
                 margin-bottom: 40px;
             }
@@ -18,65 +20,64 @@
             <h2>October 1, 2021</h2>
 
             <nav>
-                <ul>
-                    <li><a href="#agenda">Agenda</a></li>
-                    <li><a href="#minutes">Minutes</a></li>
-                    <li><a href="#recordings">Recordings</a></li>
-                    <li><a href="#footer">Bottom of Page</a></li>
-                    <li><a href="#survey">Survey</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#agenda">Agenda</a></li>
+                    <li class="nav-item"><a href="#minutes">Minutes</a></li>
+                    <li class="nav-item"><a href="#recordings">Recordings</a></li>
+                    <li class="nav-item"><a href="#footer">Bottom of Page</a></li>
+                    <li class="nav-item"><a href="#survey">Survey</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
             <section id="agenda">
-                <h3>Agenda</h3>
+                <h3 class="section-title">Agenda</h3>
                 <ol>
-                    <li>Unfinished business from brainstorm meeting on Sept. 30, 2021
+                    <li class="agenda-item">Unfinished business from brainstorm meeting on Sept. 30, 2021
                         <ul>
                             <li>Introductions, share contact information</li>
                             <li>Assign member roles</li>
                         </ul>
                     </li>
-                    <li>Brainstorm important features for a to-do list</li>
-                    <li>Sketch to-do list interfaces</li>
-                    <li>Next steps/Deliverables for next meeting</li>
-                    <li>Lots of detailed information</li>
-                    <li>Add items to edit</li>
-                    <li>Questions, follow-up concerns</li>
+                    <li class="agenda-item">Brainstorm important features for a to-do list</li>
+                    <li class="agenda-item">Sketch to-do list interfaces</li>
+                    <li class="agenda-item">Next steps/Deliverables for next meeting</li>
+                    <li class="agenda-item">Lots of detailed information</li>
+                    <li class="agenda-item">Add items to edit</li>
+                    <li class="agenda-item">Questions, follow-up concerns</li>
                 </ol>
             </section>
 
             <section>
-                <h3>Members Present</h3>
+                <h3 class="section-title">Members Present</h3>
                 <p>Em Nam, Name Two, Name Three, Name Four</p>
             </section>
 
             <section id="minutes">
-                <h3>Minutes</h3>
+                <h3 class="section-title">Minutes</h3>
                 <ol>
                     <li>
-                        <p> <b>Introductions: </b>contact information is posted in the <strong><a href="https://docs.google.com/spreadsheets/d/149RXLE7VqPdKELFvw-AmfTC4PI4s9SJFN4LR-psZ9XQ/edit?usp=sharing">shared google spreadsheet</a></strong>, with names, phone numbers, emails. Member roles were added and updated for upcoming week.</p>
+                        <p class="minute-title"> <b>Introductions: </b></p>
+                        <p>Contact information is posted in the <strong><a href="https://docs.google.com/spreadsheets/d/149RXLE7VqPdKELFvw-AmfTC4PI4s9SJFN4LR-psZ9XQ/edit?usp=sharing">shared google spreadsheet</a></strong>, with names, phone numbers, emails. Member roles were added and updated for upcoming week.</p>
                     </li>
                     
                     <li>
-                        <p><b>Brainstorm To-do list features:</b> listed the main features and categorized if features were important for minimal viable product.</p>
-                            <br>
-                            <i>Input new task:</i> user can fill in template or form with important information of their task, generates a task that lists data and has not been completed yet
-                            <br>
-                            <i>Check off completed task:</i> check box that can be clicked and crosses off or deletes task from list
-                            <br>
-                            <i>View list of all tasks:</i> list of all the tasks needed to be completed (organize chronologically or by priority)
-                            <br>
-                            <i>View details of specific task: </i> clicking on a task will pull up more detailed information that may not fit on the master list of all the tasks
-                            
-                            <p><i>Additional features</i>: being able to sort and filter tasks based on completed or not, ability to tag or group tasks and filter by tag, ability to set reminders and deadlines, celebratory visual when a task is completed, sharing completed achievements on social media, set priority to tasks</p>
-                        
-                        
+                        <p class="minute-title"><b>Brainstorm To-do list features:</b></p>
+                        <p>Listed the main features and categorized if features were important for minimal viable product.</p>
+                            <ul id="brainstorm-list">
+                                <li class="feature-item"><i>Input new task:</i> user can fill in template or form with important information of their task, generates a task that lists data and has not been completed yet</li>
+                                <li class="feature-item"></li><i>Check off completed task:</i> check box that can be clicked and crosses off or deletes task from list</li>
+                                <li class="feature-item"></li><i>View list of all tasks:</i> list of all the tasks needed to be completed (organize chronologically or by priority)</li>
+                                <li class="feature-item"></li><i>View details of specific task: </i> clicking on a task will pull up more detailed information that may not fit on the master list of all the tasks</li>
+                                <br>
+                                <li class="feature-item"></li><p><i>Additional features</i>: being able to sort and filter tasks based on completed or not, ability to tag or group tasks and filter by tag, ability to set reminders and deadlines, celebratory visual when a task is completed, sharing completed achievements on social media, set priority to tasks</p></li>
+                            </ul>                        
                     </li>
 
                     <li>
-                        <p><b>Interface Ideas:</b> sketched possible layouts for look and features of to-do lists</p>
+                        <p class="minute-title"><b>Interface Ideas:</b> </p>
+                        <p>Sketched possible layouts for look and features of to-do lists</p>
                         <div> <!--This div would be used to style images-->
                             <img src="media/reminders-app.png" alt="List of Reminders">
                             <img src="media/to-do-task-list-app.png" alt="List of tasks, plus navigation sidebar and calendar"> 
@@ -85,11 +86,12 @@
                     </li>
 
                     <li>
-                        <p><b>Next Steps:</b> Research benefits of to-do lists, research target consumer (who uses to-do lists, why), narrow down <em>useful versus counter-productive</em> features of to-do list</p>
+                        <p class="minute-title"><b>Next Steps:</b> </p>
+                        <p>Research benefits of to-do lists, research target consumer (who uses to-do lists, why), narrow down <em>useful versus counter-productive</em> features of to-do list</p>
                     </li>
 
                     <li>
-                        <p><b>Lots of Information:</b></p>
+                        <p class="minute-title"><b>Lots of Information:</b></p>
                         <details>
                             <summary>Extra Details</summary>
                             This is a lot of text. It is important to note down, but not important enough for everyone to see. It takes up too much space and isn't important enough to always see. But the information should be recorded and stored and able to be looked up if anyone needs or wants to see it.
@@ -97,13 +99,13 @@
                     </li>
 
                     <li>
-                        <p><b>Items to Edit:</b></p>
+                        <p class="minute-title"><b>Items to Edit:</b></p>
                         <!--Add extra html elements to style here-->
-                        <p style="text-align: center; background-color: cadetblue; color: white;">This is a line that is styled inline.</p>
+                        <p style="text-align: center; background-color: cadetblue; color: white; border-width: 1px; border-style: solid; border-color: black;">This is a line that is styled inline.</p>
                     </li>
 
                     <li>
-                        <p><b>Comments/Questions:</b></p>
+                        <p class="minute-title"><b>Comments/Questions:</b></p>
                         <ul>
                             <li>How are we making sure code doesn't get trampled? We will set up share code repo on <a href="https://github.com/Em-Nam/Lab2"> my GitHub</a>.</li>
                             <li>Where are the previous meeting minutes? In <a href="https://docs.google.com/spreadsheets/d/149RXLE7VqPdKELFvw-AmfTC4PI4s9SJFN4LR-psZ9XQ/edit?usp=sharing">shared google folder</a></li>
@@ -116,7 +118,7 @@
             </section>
 
             <section id="recordings">
-                <h3>Recordings of Meeting</h3>
+                <h3 class="section-title">Recordings of Meeting</h3>
                 <video controls>
                     <source src="media/eclipse-setup.mp4" type="video/mp4">
                     Pretend this is a video of meeting
@@ -138,7 +140,7 @@
         <hr>
 
         <section id="survey">
-            <h3 id="survey_title">Survey Form:</h3>
+            <h3 class="section-title" id="survey_title">Survey Form:</h3>
             <form>
                 <label>Enter your name</label>
                 <input type="text">

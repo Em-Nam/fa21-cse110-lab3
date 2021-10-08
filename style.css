@@ -1,5 +1,5 @@
 
-/*style headers*/
+/*style headers, see internal CSS for h1 styling in <head>*/
 h2 {
     /*make heading colors decrease in darkness*/
     color: rgb(55, 55, 55);
@@ -11,9 +11,70 @@ h3 {
     color: #707070;
 }
 
+p {
+    padding-bottom: 5pt;
+}
+
+nav {
+    border: 2px solid pink;
+}
+
+ul {
+    border: 2px solid purple;
+}
+
+ol {
+    border: 2px solid red;
+}
+
+li {
+    color: green;
+    background-color: #e0c0cb;
+}
+
+/*style elements by class*/
+.section-title {
+    border-width: 2Q;
+    border-color: black;
+    border-style: dotted;
+}
+
+.minute-title {
+    background-color: aqua;
+    padding-bottom: 0pt;
+}
+
+.nav {
+    padding: 20px;
+}
+
+.nav-item {
+    background-color: lightcyan;   /*del after*/
+    
+    display: inline-flex;
+    font-family: Helvetic, Arial, sans-serif;
+    font-size: 3.5vw;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 4px;
+    
+}
+
+.agenda-item {
+    background-color: red;
+}
 
 
 /*style specific elements by id*/
+#brainstorm-list {
+    list-style-type: none; /* Remove bullets */
+    border-width: 0;
+    padding: 0;
+    padding: 0pt 0pt 3pt 10pt;
+}
+
 #survey_title {
     color: hsl(0, 100%, 50%);
     /* color: red; */
