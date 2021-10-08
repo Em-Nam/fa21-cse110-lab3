@@ -12,7 +12,7 @@ h3 {
 }
 
 p {
-    padding-bottom: 5pt;
+    padding: 0ex 2ex 2ex 2ex;
 }
 
 nav {
@@ -24,13 +24,35 @@ ul {
 }
 
 ol {
-    border: 2px solid red;
+    border: 2px solid blue;
+    width: 80vw;
+    height: auto;
 }
 
 li {
     color: green;
     background-color: #e0c0cb;
 }
+
+/*style links*/
+a:link {
+  color:#000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blueviolet;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 
 /*style elements by class*/
 .section-title {
@@ -40,8 +62,19 @@ li {
 }
 
 .minute-title {
+    font-size: larger;
+
     background-color: aqua;
     padding-bottom: 0pt;
+    margin: auto;
+
+}
+
+.minute-item {
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+    margin-right: 2ex;
+    margin-left: 0ex;
 }
 
 .nav {
@@ -49,8 +82,8 @@ li {
 }
 
 .nav-item {
-    background-color: lightcyan;   /*del after*/
-    
+    background-color: lightcyan;  
+
     display: inline-flex;
     font-family: Helvetic, Arial, sans-serif;
     font-size: 3.5vw;
@@ -59,12 +92,93 @@ li {
     border-style: solid;
     border-width: 3px;
     border-radius: 4px;
+
+    padding: 0.5vw;
     
 }
 
 .agenda-item {
     background-color: red;
 }
+
+
+.container {
+    display: inline-grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    width: 100%;
+    height: auto;
+    /* overflow: auto; */
+
+    /* grid-template-areas:
+        "header header header header"
+        "img1 img2 img3 img4"
+        "text1 text2 text3 text 3"; */
+
+    border-color:red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.grid-header {
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+
+    text-align: center;
+
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    max-width: 100%;
+
+}
+
+.img1, .img2, .img3, .img4 {
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+
+    height: 20vw;
+    width: 20vw;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* .img1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+*/
+
+.text3 {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.text1, .text2, .text3 {
+    /* width: 25vw;
+    height: auto; */
+
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+
+    padding: 0ex;
+}
+
+
 
 
 /*style specific elements by id*/
