@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>Sample Meeting Minutes Template</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <style>
             h1 {
                 font-family: Arial, Helvetica, sans-serif;
@@ -15,9 +18,9 @@
     </head>
     <body>
         <header>
-            <h1>To-Do List Project Second Brainstorm</h1>
-            <h2>Brainstorming and deciding features</h2>
-            <h2>October 1, 2021</h2>
+            <h1 id="main-title">To-Do List Project Second Brainstorm</h1>
+            <h2 id="sub-title">Brainstorming and deciding features</h2>
+            <h2 id="date-label">October 1, 2021</h2>
 
             <nav>
                 <ul class="nav">
@@ -78,7 +81,7 @@
                     <li class="minute-item">
                         <p class="minute-title"><b>Interface Ideas:</b> </p>
                         <p>Sketched possible layouts for look and features of to-do lists</p>
-                        <div class="container"> <!--This div would be used to style images-->
+                        <div class="grid"> <!--This div would be used to style images-->
                             <h3 class="grid-header">Title of grid</h3>
                             <img class="img1" src="media/reminders-app.png" alt="List of Reminders">
                             <img class="img2" src="media/to-do-task-list-app.png" alt="List of tasks, plus navigation sidebar and calendar"> 
@@ -157,7 +160,7 @@
         </main>
 
         <footer id="footer">
-            <h2>Em Nam</h2>
+            <h2 id="signature">Em Nam</h2>
             <h3>Email: <a href="mailto:enam@ucsd.edu">enam@ucsd.edu</a></h3>
         </footer>
 

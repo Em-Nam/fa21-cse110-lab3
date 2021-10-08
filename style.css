@@ -55,7 +55,7 @@ a:hover {
 
 
 /*style elements by class*/
-.section-title {
+[class~=section-title] {
     border-width: 2Q;
     border-color: black;
     border-style: dotted;
@@ -101,8 +101,8 @@ a:hover {
     background-color: red;
 }
 
-
-.container {
+/*style grid*/
+.grid {
     display: inline-grid;
 
     grid-template-columns: repeat(4, 1fr);
@@ -219,7 +219,7 @@ a:hover {
 }
 
 .img3-fb {
-    width: 350px;
+    max-width: 350px;
     border-color: brown;
     border-width: 2px;
     border-style: solid;
@@ -231,25 +231,43 @@ a:hover {
     border-width: 2px;
     border-style: solid;
 
-    width: 165px;
+    max-width: 165px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
 .text3-fb {
-    width: 300px;
+    min-width: 165px;
+    max-width: 300px;
 }
 
 
 
 
 /*style specific elements by id*/
+#main-title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    background-color: rgb(221, 216, 216);
+}
+
+#date-label, #sub-title {
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
+
 #brainstorm-list {
     list-style-type: none; /* Remove bullets */
     border-width: 0;
     padding: 0;
     padding: 0pt 0pt 3pt 10pt;
+}
+
+#signature {
+    font-family: 'Permanent Marker';
 }
 
 #survey_title {
@@ -258,6 +276,19 @@ a:hover {
 }
 
 #survey {
-    background-color: #e0c0cb;
+    background-color: white;
     /*Add padding or border to this section*/
+}
+
+/*style media query responsiveness*/
+@media (max-width: 50rem) {
+    #survey {
+        background-color: #e0c0cb;
+    }
+}
+
+@media (min-width: 70rem) {
+    #survey {
+        border: 3px solid red;
+    }
 }
