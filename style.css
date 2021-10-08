@@ -1,0 +1,295 @@
+* {
+    color: black;
+}
+
+/*style headers, see internal CSS for h1 styling in <head>*/
+h2 {
+    /*make heading colors decrease in darkness*/
+    color: rgb(55, 55, 55);
+
+}
+
+h3 {
+    /*make heading colors decrease in darkness*/
+    color: #707070;
+}
+
+p {
+    padding: 0ex 2ex 2ex 2ex;
+}
+
+ul {
+    border: 2px solid purple;
+}
+
+ol {
+    border: 2px solid blue;
+    width: auto;
+    height: auto;
+}
+
+li {
+    background-color: #e0c0cb;
+}
+
+/*use combinators*/
+ol ul {
+    border: 0px;    /*gets rid of borders within list*/
+}
+
+nav > ul {
+    border-width: 5px;    
+    /*thickens border around navigation */
+}
+
+h6 ~ p {
+    color: green;
+}
+
+h6 + p {
+    text-decoration: line-through;
+}
+
+
+/*style links*/
+a:link {
+  color:#000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*inconsistend selector for link to use combinator as req in Lab3*/
+:visited {
+  color: blueviolet;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+/*style elements by class*/
+/*use attribute selector for when there is exact value match*/
+h3[class=section-title] {
+    border-width: 2Q;
+    border-color: black;
+    border-style: dotted;
+}
+
+.minute-title {
+    font-size: larger;
+
+    background-color: aqua;
+    padding-bottom: 0pt;
+    margin: auto;
+
+}
+
+.minute-item {
+    margin-top: 2ex;
+    margin-bottom: 2ex;
+    margin-right: 2ex;
+    margin-left: 0ex;
+}
+
+.nav {
+    padding: 20px;
+}
+
+.nav-item {
+    background-color: lightcyan;  
+
+    display: inline-flex;
+    font-family: Helvetic, Arial, sans-serif;
+    font-size: 3.5vw;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 4px;
+
+    padding: 0.5vw;
+    
+}
+
+.agenda-item {
+    background-color: white;
+}
+
+/*style grid*/
+.grid {
+    display: inline-grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    width: 100%;
+    height: auto;
+
+    border-color:red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.grid-header {
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+
+    text-align: center;
+
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    /* max-width: 90%; */
+
+}
+
+.img1, .img2, .img3, .img4 {
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+
+    height: 20vw;
+    width: 20vw;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.text3 {
+    grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.text1, .text2, .text3 {
+
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+
+    padding: 0ex;
+}
+
+
+/*style flex box*/
+.flexbox {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    border-color: brown;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.flexbox-header {
+    border-color: brown;
+    border-width: 2px;
+    border-style: solid;
+
+    width:100%;
+    text-align: center;
+}
+
+.img {
+    border-color: brown;
+    border-width: 2px;
+    border-style: solid;
+
+    width: 165px;
+    height: 165px;
+
+    align-self: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.img3-fb {
+    max-width: 350px;
+
+}
+
+.text1-fb, .text2-fb, .text3-fb {
+    max-width: 165px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text3-fb {
+    min-width: 165px;
+    max-width: 300px;
+}
+
+/*style specific elements by id*/
+#main-title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    background-color: rgb(221, 216, 216);
+}
+
+#date-label, #sub-title {
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
+
+#brainstorm-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    padding: 0pt 0pt 3pt 10pt;
+}
+
+#signature {
+    font-family: 'Permanent Marker';
+}
+
+#survey_title {
+    color: hsl(0, 100%, 50%);
+    text-decoration: underline;
+}
+
+#survey {
+    background-color: white;
+    margin: 1cm 0.5cm 1cm 0.5cm;
+    padding-top: 2mm;
+    padding-bottom: 5mm;
+    padding-left: 2mm;
+    padding-right: 2mm;
+}
+
+#grade-choice {
+    display: block;
+}
+
+#state-choice-box {
+    display: block;
+}
+
+/*style media query responsiveness*/
+@media (max-width: 50rem) {
+    #survey {
+        background-color: #e0c0cb;
+    }
+}
+
+@media (min-width: 70rem) {
+    #survey {
+        border: 3px solid red;
+    }
+}
