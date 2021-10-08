@@ -1,6 +1,6 @@
-# Lab2
+# fa21-cse110-lab3
 
-Published site: https://em-nam.github.io/Lab2/
+Link to published web page: https://em-nam.github.io/fa21-cse110-lab3/
 
 Practice with HTML by creating fake meeting minutes.
 Traditionally, a meeting note includes:
